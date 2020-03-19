@@ -3,22 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link Splitter</title>
+    <script src="home.js"></script>
 </head>
 <body>
 
     <form>
         <h3>Enter Your Text (to be split)</h1>
         <textarea id='text1' class= "text" name="message" rows="30" cols="50" placeholder="Your Text"></textarea>
-        <textarea id='text2' class= "text" name="message" rows="30" cols="50" placeholder="Output"></textarea>
+        <textarea id='text2' class= "text" name="message" rows="30" cols="50" placeholder="Output" readonly></textarea>
         <br><br>
         
         <h3>Enter the character you want to split after</h3>
         <textarea id='split' rows="1" cols="3" maxlength="1" style="resize: none;"></textarea>
         
         <h3>Do you want to keep the left side or right side</h3>
-        <input type="radio" id="0" value="0" name="side">
+        <input type="radio" id="left" value="0" name="side">
         <label for="0">Left Side</label><br>
-        <input type="radio" id="1" value="1" name="side">
+        <input type="radio" id="right" value="1" name="side">
         <label for="1">Right Side</label><br>
         <br>
         <button id='submit' onclick="return thething();" type="button">Submit</button>
@@ -26,11 +27,11 @@
 
 
       <style>
-.text { width: 350px; border: 1px solid #000; padding: 5px; resize: none;}
-.text,h3,button, input, label{ font-family: Helvetica;}
+    .text { width: 350px; border: 1px solid #000; padding: 5px; resize: none;}
+    .text,h3,button, input, label{ font-family: Helvetica;}
 
       </style>
-<script src="home.js"></script>
+
 
 </body>
 </html>
